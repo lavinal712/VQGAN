@@ -191,7 +191,7 @@ class VectorQuantizer(AbstractQuantizer):
         sane_index_shape: bool = False,
         log_perplexity: bool = False,
         embedding_weight_norm: bool = False,
-        loss_key: str = "loss/vq",
+        loss_key: str = "vq_loss",
     ):
         super().__init__()
         self.n_e = n_e

@@ -517,7 +517,6 @@ class AutoencodingEngineLegacy(AutoencodingEngine):
 class VQModel(AutoencodingEngineLegacy):
     def __init__(
         self,
-        embed_dim: int,
         n_embed: int,
         sane_index_shape: bool = False,
         **kwargs,
@@ -532,7 +531,7 @@ class VQModel(AutoencodingEngineLegacy):
                 ),
                 "params": {
                     "n_e": n_embed,
-                    "e_dim": embed_dim,
+                    "e_dim": kwargs["embed_dim"],
                     "sane_index_shape": sane_index_shape,
                 },
             },
