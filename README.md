@@ -1,1 +1,1 @@
-# VQModel
+# VQGAN
