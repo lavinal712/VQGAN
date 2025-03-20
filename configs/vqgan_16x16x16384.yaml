@@ -6,7 +6,7 @@ model:
     monitor: "val/loss/rec"
     disc_start_iter: 50001
     embed_dim: 256
-    n_embed: 1024
+    n_embed: 16384
 
     ddconfig:
       attn_type: vanilla-xformers
